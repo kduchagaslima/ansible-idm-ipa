@@ -11,7 +11,7 @@
   failed_when: uninstall.rc != 0 and uninstall.rc != 2
   changed_when: uninstall.rc == 0
 
-#- name: Remove IPA client package
-#  package:
-#    name: "{{ ipaclient_packages }}"
-#    state: absent
+- name: Remove IPA client package
+  package:
+    name: "{{ ipaclient_packages }}"
+    state: absent
